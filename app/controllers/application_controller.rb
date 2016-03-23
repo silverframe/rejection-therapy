@@ -7,15 +7,6 @@ class ApplicationController < ActionController::Base
 
   helper_method :challenge
 
-  # def challenge
-  #   r = Random.new
-  #   number = r.rand(1...25)
-  #   @challenge = Challenge.find(number)
-  #   return @challenge
-  #   # @new_challenge = @challenge.content
-  #   # @post.challenge_id = @challenge.id
-  # end
-
   protected
 
   def configure_devise_permitted_parameters

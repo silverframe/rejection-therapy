@@ -17,7 +17,6 @@
       z-index: 1;
       top: -10px;
     }
-
     .content {
       /*background: rgba(255, 255, 255, 0.35);*/
       border-radius: 3px;
@@ -32,22 +31,19 @@
       z-index: 2;
       padding: 0 10px;
     }
-
     input {
       width: 118%;
       margin: 0 auto;
       border-radius: 3px;
       border: none;
-      height: 25px;
+      height: 30px;
       text-align: center;
-
     }
     .login {
-      margin: 20px auto;
+      margin: 30px auto;
       width: 30%;
-      display: flex;
       align-items: center;
-
+      min-width: 300px;
     }
     .login-screen {
       /*background-color: #FFF;*/
@@ -57,12 +53,11 @@
       border-radius: 5px;
       justify-content: center;
     }
-
-    .new_user{
-    margin: 0 auto;
+    .new_user {
+      margin: 0 auto;
     }
     .actions {
-      width: 30%
+      width: 30%;
     }
     .app-title {
       text-align: center;
@@ -76,10 +71,34 @@
     .input-form {
       /*padding-left: 13px;*/
       padding-bottom: 13px;
-      margin: 0 auto;
+      margin-left: 17px;
+      display: block;
       justify-content: center;
+      text-align: center;
+    }
+    .actions {
+      display: block;
+      margin-left: auto;
+      margin-right: 63px;
+      width: 80%;
+    }
+    button {
+      display: block;
+      margin-left: auto;
+      margin-right: 63px;
+      width: 100%;
+      height: 30px;
+      font-size: 10px;
+      background-color: rgb(143, 152, 151);
+    }
+    .more-links {
+      text-align: center;
+      margin-right: 15px;
     }
 
+    a {
+      font-size: 13px;
+    }
   </style>
 </head>
 <body>
@@ -105,18 +124,23 @@
             <%= f.password_field :password, autocomplete: "off",:placeholder =>"Password" %>
           </div>
 
-          <% if devise_mapping.rememberable? -%>
+          <!-- <% if devise_mapping.rememberable? -%>
           <div class="field">
             <%= f.check_box :remember_me %>
             <%= f.label :remember_me %>
           </div>
-          <% end -%>
+          <% end -%> -->
 
           <div class="actions">
             <%= f.submit "Log in"%>
           </div>
           <% end %>
-          <%= render "devise/shared/links" %>
+          <div class="more-links">
+            <button class="btn btn-default" type="submit">
+            <!-- <%= render "devise/shared/links" %> -->
+            <%= link_to "Sign Up", new_user_registration_path %>
+            </button>
+          </div>
         </div>
 
       </div>

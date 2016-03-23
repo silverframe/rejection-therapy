@@ -1,20 +1,18 @@
 <p id="notice"><%= notice %></p>
 <div class="panel panel-default">
-  <div class="panel-body" "header">
-      <b>Hello
-        <%= current_user.username %>, fill in today's entry
-        <a href="/posts/new">here</a>
-      </b>
+  <div class="instructions" "header">
+    <b>Hello
+      <%= current_user.username %>, fill in today's entry
+      <a href="/posts/new">here</a>
+    </b>
   </div>
-  <div class="form-stuff">
-    <%= render "form" %>
-  </div>
+
 </div>
 <% @posts.each do |post| %>
 <div class="panel panel-default" "boxes">
   <div class="panel-heading">
     <div id="challenge-heading">
-      <b><%# post.challenge.content %></b>
+      <b><%= post.challenge.content unless post.challenge.blank? %></b>
     </div>
     <h5>
       <span class="glyphicon glyphicon-time"></span>
@@ -23,24 +21,27 @@
       by
       <%= post.user.username %></h5>
   </div>
+  <div class= "body-posts">
+    <% if !post.image.blank? %>
+    <div class="panel-body" id="image-posts">
+      <%=  image_tag post.image.url('medium'), class: "img-rounded" %>
+    </div>
+    <% end %>
+    <div class="content-posts">
 
-  <% if !post.image.blank? %>
-  <div class="panel-body">
-    <%=  image_tag post.image.url('thumb'), class: "img-rounded" %>
-  </div>
-  <% end %>
+      <div class="panel-body">
+        <p>
+          <b>What I did:</b>
+          <br/><%= post.whatIdid %></p>
+      </div>
+      <div class="panel-body">
+        <p>
+          <b>What I learnt:</b>
+        </br><%= post.whatIlearnt %></p>
+    </div>
 
-  <div class="panel-body">
-    <p>What I did:
-      <br/><%= post.whatIdid %></p>
   </div>
-  <div class="panel-body">
-    <p>What I learnt:
-    </br><%= post.whatIlearnt %></p>
 </div>
-<!-- <% if !post.image.blank? %>
-    <%=  image_tag post.image.url('thumb'), class: "img-rounded" %>
-    <% end %> -->
 <div class="vote-button">
 
   <%= link_to like_post_path(post), class: "like", method: :put do %>

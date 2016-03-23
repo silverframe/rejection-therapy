@@ -18,7 +18,7 @@ class PostsController < ApplicationController
   # GET /posts/new
   def new
     count = current_user.posts.where('created_at > ?', 24.hours.ago).count
-    if count >= 0
+    if count > 1
       @post = Post.new
       r = Random.new
       number = r.rand(1...25)
@@ -26,13 +26,14 @@ class PostsController < ApplicationController
       @new_challenge = @challenge.content
       @post.challenge_id = @challenge.id
     else
-        flash[:notice] = "You've already posted for today"
-        # redirect_to '/users'
+        flash[:notice] = "You've already posted for today, come again tomorrow!"
+        redirect_to '/posts'
     end
   end
 
   # GET /posts/1/edit
   def edit
+    @posts = Post.all
   end
 
   # POST /posts

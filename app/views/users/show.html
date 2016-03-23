@@ -19,11 +19,26 @@
         Posted on
         <%= post.created_at.strftime('%b %d') %></h5>
     </div>
-    <div class="panel-body">
-      <p>What I did:
-        <br/><%= post.whatIdid %></p>
-      <p>What I learnt:
-      </br><%= post.whatIlearnt %></p>
+    <div class="body-posts">
+      <% if !post.image.blank? %>
+      <div class="panel-body" id="image-posts">
+        <%=  image_tag post.image.url('medium'), class: "img-rounded" %>
+      </div>
+      <% end %>
+      <div id="content-posts">
+
+        <div class="panel-body">
+          <p>
+            <b>What I did:</b>
+            <br/><%= post.whatIdid %></p>
+        </div>
+        <div class="panel-body">
+          <p>
+            <b>What I learnt:</b>
+          </br><%= post.whatIlearnt %></p>
+      </div>
+
+    </div>
   </div>
   <div class="edit">
 

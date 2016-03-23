@@ -25,12 +25,13 @@
 
 <div class = "row">
 
-  <div class="field">
-    <!-- <%= f.label :whatIdid, "What I did" %><br> -->
+  <div class="field" "questions">
+
+    <div class="question"><%= f.label :whatIdid, "What did you do?"%><br></div>
     <div class="form-field"><%= f.text_area :whatIdid, :placeholder => "What did you do today?" %></div>
   </div>
-  <div class="field">
-    <!-- <%= f.label :whatIlearnt, "What I learnt" %><br> -->
+  <div class="field" "questions">
+    <div class="question"><%= f.label :whatIlearnt, "What did you learn?"%><br></div>
     <div class="form-field"><%= f.text_area :whatIlearnt, :placeholder => "What did you learn?", cols: "135", rows: "5" %></div>
   </div>
 
