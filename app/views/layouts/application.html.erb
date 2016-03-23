@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rejection</title>
+    <link rel="stylesheet" href="/css/bootstrap.css" media="screen" title="no title" charset="utf-8">
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+    <script src="/js/bootstrap.js" charset="utf-8"></script>
+    <link href='https://fonts.googleapis.com/css?family=Leckerli+One' rel='stylesheet' type='text/css'>
+
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top" "nav">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="brand-name">
+              <a href="#">Rejection Therapy</a>
+            </li>
+            <% if user_signed_in? %>
+            <li><%= link_to 'New Post', new_post_path %></li>
+            <% end %>
+            <% if user_signed_in? %>
+            <li><%= link_to 'Home', root_path %></li>
+            <% end %>
+            <!-- <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li> -->
+          </ul>
+          <div class="nav navbar-nav navbar-right">
+            <% if current_user %>
+          <li>
+            <a href="/users/<%= current_user.id%>">
+              <span class="glyphicon glyphicon-user"></span>
+              <%= current_user.username %></a>
+          </li>
+          <% end %>
+          <% if user_signed_in? %>
+          <!-- <li><%= link_to('Logout', destroy_user_session_path, :method => :delete)%></li> -->
+          <%= link_to('Logout', destroy_user_session_path, :method => :delete, :class => "btn btn-default navbar-btn btn-sm")%>
+        <% else %>
+          <%= link_to('Login', new_user_session_path, :class => "btn btn-default navbar-btn btn-sm")  %>
+          <!-- <a class="btn btn-default" href="#" role="button"><%= link_to('Logout', destroy_user_session_path, :method => :delete)%></a> -->
+          <% end %>
+        </div>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+  <div class="container">
+    <%= yield %>
+  </div>
+
+</body>
+</html>

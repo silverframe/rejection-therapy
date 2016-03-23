@@ -1,0 +1,40 @@
+# This file should contain all the record creation needed to seed the database with its default values.
+# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
+#
+# Examples:
+#
+#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
+#   Mayor.create(name: 'Emanuel', city: cities.first)
+
+User.create(username:'snowy', email:'snowy@snow.com', password:'12345678', password_confirmation: '12345678')
+User.create(username:'tumi', email:'tumi@snow.com', password:'12345678', password_confirmation: '12345678')
+User.create(username:'cooper', email:'cooper@snow.com', password:'12345678', password_confirmation: '12345678')
+
+Challenge.create(content:'Reach out to a family member or friend who has shunned you')
+Challenge.create(content:'Offer a bowl of candy to at least 3 strangers')
+Challenge.create(content:'Offer to pay for someone else\'s order')
+Challenge.create(content:'Smile at everyone you walk past today')
+Challenge.create(content:'Ask your boss for a raise. If unemployed, ask for a job.')
+Challenge.create(content:'Ask someone out on a date')
+Challenge.create(content:'Ask a stranger for a dollar')
+Challenge.create(content:'Ask a stranger for directions')
+Challenge.create(content:'Ask someone you\'ve never socialised with out to dinner')
+Challenge.create(content:'Say hello to 3 people at the grocery store')
+Challenge.create(content:'Sit beside a stranger and strike up a conversation')
+Challenge.create(content:'Offer to help a stranger with their groceries')
+Challenge.create(content:'Try to make an enemy into a friend')
+Challenge.create(content:'Ask for a sip of someone\'s drink')
+Challenge.create(content:'Try to buy something that is not on sale in a store')
+Challenge.create(content:'Confess to someone you lied to')
+Challenge.create(content:'Before buying something, ask for a discount')
+Challenge.create(content:'Ask for a stranger\'s phone number')
+Challenge.create(content:'Request for a free pass')
+Challenge.create(content:'Invite someone to your club')
+Challenge.create(content:'Show a stranger a picture of your pet')
+Challenge.create(content:'At a restaurant, ask for something not on the menu')
+Challenge.create(content:'Ask a stranger for a high-five')
+Challenge.create(content:'Ask for a good or service by barter trade')
+Challenge.create(content:'Ask to cut to the front of the queue')
+Challenge.create(content:'Ask a stranger to take a picture of you')
+Challenge.create(content:'Ask a friend to do your homework')
+Challenge.create(content:'Introduce yourself to a stranger')

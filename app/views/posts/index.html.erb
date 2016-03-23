@@ -1,0 +1,70 @@
+<p id="notice"><%= notice %></p>
+<div class="panel panel-default">
+  <div class="panel-body" "header">
+      <b>Hello
+        <%= current_user.username %>, fill in today's entry
+        <a href="/posts/new">here</a>
+      </b>
+  </div>
+  <div class="form-stuff">
+    <%= render "form" %>
+  </div>
+</div>
+<% @posts.each do |post| %>
+<div class="panel panel-default" "boxes">
+  <div class="panel-heading">
+    <div id="challenge-heading">
+      <b><%# post.challenge.content %></b>
+    </div>
+    <h5>
+      <span class="glyphicon glyphicon-time"></span>
+      Posted on
+      <%= post.created_at.strftime('%b %d') %>
+      by
+      <%= post.user.username %></h5>
+  </div>
+
+  <% if !post.image.blank? %>
+  <div class="panel-body">
+    <%=  image_tag post.image.url('thumb'), class: "img-rounded" %>
+  </div>
+  <% end %>
+
+  <div class="panel-body">
+    <p>What I did:
+      <br/><%= post.whatIdid %></p>
+  </div>
+  <div class="panel-body">
+    <p>What I learnt:
+    </br><%= post.whatIlearnt %></p>
+</div>
+<!-- <% if !post.image.blank? %>
+    <%=  image_tag post.image.url('thumb'), class: "img-rounded" %>
+    <% end %> -->
+<div class="vote-button">
+
+  <%= link_to like_post_path(post), class: "like", method: :put do %>
+  <button type="button" class="btn btn-info" aria-label="Left Align">
+    <span class="glyphicon glyphicon-thumbs-up glyphicon-align-center" aria-hidden="true"></span>
+    <span class="badge"><%=post.get_upvotes.size%>
+    </span>
+  </button>
+  <% end %>
+
+  <%= link_to dislike_post_path(post), class: "like", method: :put do %>
+  <button type="button" class="btn btn-info" aria-label="Left Align">
+    <span class="glyphicon glyphicon-thumbs-down glyphicon-align-center" aria-hidden="true"></span>
+    <span class="badge"><%=post.get_downvotes.size%>
+    </span>
+  </button>
+  <% end %>
+</div>
+</div>
+
+<!-- <button class="btn btn-default">
+    <%= link_to "Edit", edit_post_path(post)%>
+  </button> -->
+
+<% end %>
+
+</div>

@@ -1,0 +1,49 @@
+<%= form_for @post, html: {multipart: true } do |f| %>
+  <% if @post.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@post.errors.count, "error") %> prohibited this post from being saved:</h2>
+
+      <ul>
+      <% @post.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+<div class ="login-form">
+  <div class="login-screen">
+  <h1><b><%= timeago_tag Time.zone.now, format: "%a, %B %d" %>  </b></h1>
+  <% if !@challenge.blank? %>
+    <%=  @challenge.content  %>
+  <% end %>
+  <div class="field">
+    <!-- <%= f.label :title %><br>
+    <%= f.text_field :title %> -->
+    <%= f.hidden_field :challenge_id, :value => @post.challenge_id %>
+    <%= f.hidden_field :user_id, :value => @post.user_id %>
+  </div>
+
+<div class = "row">
+
+  <div class="field">
+    <!-- <%= f.label :whatIdid, "What I did" %><br> -->
+    <div class="form-field"><%= f.text_area :whatIdid, :placeholder => "What did you do today?" %></div>
+  </div>
+  <div class="field">
+    <!-- <%= f.label :whatIlearnt, "What I learnt" %><br> -->
+    <div class="form-field"><%= f.text_area :whatIlearnt, :placeholder => "What did you learn?", cols: "135", rows: "5" %></div>
+  </div>
+
+  </div>
+  <div class="field">
+    <%= f.label :image, " Image" %><br>
+    <%= f.file_field :image %>
+    <br />
+  </div>
+  <div class="actions" "btn btn-primary">
+    <%= f.submit class:"btn btn-primary" %>
+
+  </div>
+</div>
+</div>
+<% end %>

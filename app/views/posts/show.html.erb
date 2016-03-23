@@ -1,0 +1,46 @@
+
+
+<% @posts.each do |post| %>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <div id = "challenge-heading">
+      <b><%# post.challenge.content %></b>
+    </div>
+    <h5>
+      <span class="glyphicon glyphicon-time"></span>
+      Posted on
+      <%= post.created_at.strftime('%b %d') %></h5>
+  </div>
+  <div class="panel-body">
+    <p>What I did:
+      <br/><%= post.whatIdid %></p>
+    <p>What I learnt:
+    </br><%= post.whatIlearnt %></p>
+</div>
+<% if !post.image.blank? %>
+<div class="panel-body">
+  <%=  image_tag post.image.url('thumb'), class: "img-rounded" %>
+</div>
+<% end %>
+<div class="edit-button">
+
+<button class="btn btn-default" "edit-button">
+  <%= link_to "Edit", edit_post_path(post)%>
+</button>
+
+</div>
+
+</div>
+
+<% end %>
+
+<style>
+
+.edit-button {
+  text-align: right;
+  padding: 10px;
+}
+
+
+
+<%= link_to 'Back', posts_path %>

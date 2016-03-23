@@ -1,0 +1,107 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ .navbar-right{
+   margin-right: 10px;
+ }
+
+ body {
+   background-color: #3CBBFF;
+   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+   padding-top: 70px;
+ }
+ p,
+ li,
+ ul {
+   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+ }
+ .login-form {
+   margin: 30px auto;
+   width: 80%;
+ }
+ .login-screen {
+   background-color: #FFF;
+   padding: 20px;
+   border-radius: 5px;
+   margin: auto;
+   padding-left: 25px;
+ }
+ .brand-name {
+   font-family: 'Leckerli One', cursive;
+   font-size: 14px;
+ }
+ .form-field {
+   width: 120%;
+ }
+ .field {
+   width: 80%;
+ }
+
+ .panel-content {
+   padding: 15px;
+ }
+
+.login-screen {
+  background-color: #FFF;
+  padding: 20px;
+  border-radius: 5px
+}
+.like {
+  text-decoration: none;
+}
+.vote-button {
+      text-align: right;
+      padding: 10px;
+}
+
+.edit {
+  text-align: right;
+  padding: 10px;
+}
+
+textarea {
+  width: 100%;
+  margin: 0 auto;
+  margin-left: 13px;
+  padding: 5px;
+}
+
+a:hover {
+  text-decoration: none;
+  background-color:white;
+  color:grey;
+}
+
+#notice {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.actions {
+  text-align: right;
+}
+
+.user_names {
+  font-size: 3rem;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+  padding-bottom: 25px;
+}
+.panel-default > .panel-heading  {
+  font-size: 2.5rem;
+  font-weight: 500;
+  padding-top: 20px; 
+}
