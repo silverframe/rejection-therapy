@@ -34,7 +34,7 @@
             <li><%= link_to 'New Post', new_post_path %></li>
             <% end %>
             <% if user_signed_in? %>
-            <li><%= link_to 'Home', root_path %><span class="glyphicon glyphicon-home" aria-hidden="true"></span></li>
+            <li><%= link_to 'Home', root_path %></li>
             <% end %>
             <!-- <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
@@ -61,7 +61,8 @@
           <!-- <li><%= link_to('Logout', destroy_user_session_path, :method => :delete)%></li> -->
           <%= link_to('Logout', destroy_user_session_path, :method => :delete, :class => "btn btn-default navbar-btn btn-sm")%>
         <% else %>
-          <%= link_to('Login', new_user_session_path, :class => "btn btn-default navbar-btn btn-sm")  %>
+          <%= link_to("Sign Up", new_user_registration_path, :class => "btn btn-default navbar-btn btn-sm")  %>
+          <%= link_to("Login", new_user_session_path, :class => "btn btn-default navbar-btn btn-sm")  %>
           <!-- <a class="btn btn-default" href="#" role="button"><%= link_to('Logout', destroy_user_session_path, :method => :delete)%></a> -->
           <% end %>
         </div>

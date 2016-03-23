@@ -6,7 +6,8 @@ class CreatePosts < ActiveRecord::Migration
       t.integer :user_id
       t.text :whatIdid
       t.text :whatIlearnt
-      t.file :image 
+      t.text :howToimprove
+      t.file :image
       t.timestamps null: false
     end
   end

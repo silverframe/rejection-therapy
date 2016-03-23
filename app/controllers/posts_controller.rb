@@ -18,7 +18,7 @@ class PostsController < ApplicationController
   # GET /posts/new
   def new
     count = current_user.posts.where('created_at > ?', 24.hours.ago).count
-    if count > 1
+    if count >= 0
       @post = Post.new
       r = Random.new
       number = r.rand(1...25)

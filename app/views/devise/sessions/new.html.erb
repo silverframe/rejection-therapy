@@ -94,10 +94,15 @@
     .more-links {
       text-align: center;
       margin-right: 15px;
+      background-color: rgb(198, 184, 189);
     }
 
     a {
       font-size: 13px;
+    }
+    button{
+      background-color: rgb(198, 184, 189);
+      box-shadow: none;
     }
   </style>
 </head>
@@ -135,12 +140,7 @@
             <%= f.submit "Log in"%>
           </div>
           <% end %>
-          <div class="more-links">
-            <button class="btn btn-default" type="submit">
-            <!-- <%= render "devise/shared/links" %> -->
-            <%= link_to "Sign Up", new_user_registration_path %>
-            </button>
-          </div>
+
         </div>
 
       </div>
