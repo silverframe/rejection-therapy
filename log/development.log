@@ -55178,3 +55178,874 @@ Processing by PostsController#index as HTML
   [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 7], ["votable_type", "Post"], ["vote_flag", "f"]]
   Rendered posts/index.html.erb within layouts/application (95.8ms)
 Completed 200 OK in 189ms (Views: 153.0ms | ActiveRecord: 7.6ms)
+
+
+Started GET "/" for ::1 at 2016-03-24 01:34:10 +0800
+Processing by PostsController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mChallenge Load (0.3ms)[0m  SELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1  [["id", 24]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL  [["votable_id", 10], ["votable_type", "Post"], ["vote_flag", "t"]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 10], ["votable_type", "Post"], ["vote_flag", "f"]]
+  [1m[35mChallenge Load (0.2ms)[0m  SELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1  [["id", 22]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL  [["votable_id", 6], ["votable_type", "Post"], ["vote_flag", "t"]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 6], ["votable_type", "Post"], ["vote_flag", "f"]]
+  [1m[35mChallenge Load (0.1ms)[0m  SELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1  [["id", 23]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL  [["votable_id", 5], ["votable_type", "Post"], ["vote_flag", "t"]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 5], ["votable_type", "Post"], ["vote_flag", "f"]]
+  [1m[35mChallenge Load (0.2ms)[0m  SELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1  [["id", 13]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL  [["votable_id", 14], ["votable_type", "Post"], ["vote_flag", "t"]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 14], ["votable_type", "Post"], ["vote_flag", "f"]]
+  [1m[35mChallenge Load (0.1ms)[0m  SELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL  [["votable_id", 8], ["votable_type", "Post"], ["vote_flag", "t"]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 8], ["votable_type", "Post"], ["vote_flag", "f"]]
+  [1m[35mChallenge Load (0.1ms)[0m  SELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1  [["id", 12]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL  [["votable_id", 7], ["votable_type", "Post"], ["vote_flag", "t"]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 7], ["votable_type", "Post"], ["vote_flag", "f"]]
+  Rendered posts/index.html.erb within layouts/application (68.6ms)
+Completed 200 OK in 157ms (Views: 130.9ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/assets/scaffolds.self-526dedf382fc94f390adf74d295b2b1be2754e02981b10124f4606e4b666c86b.css?body=1" for ::1 at 2016-03-24 01:34:11 +0800
+
+
+Started GET "/assets/challenges.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-24 01:34:11 +0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-24 01:34:11 +0800
+
+
+Started GET "/assets/application.self-2d681917362e8e4c12a1cc4b3584b445c1689a5b0eccdc2a5c548fe7d2fcc203.css?body=1" for ::1 at 2016-03-24 01:34:11 +0800
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-03-24 01:34:11 +0800
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-03-24 01:34:11 +0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-24 01:34:11 +0800
+
+
+Started GET "/assets/challenges.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-24 01:34:11 +0800
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-24 01:34:11 +0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-24 01:34:11 +0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-24 01:34:11 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-24 01:34:11 +0800
+
+
+Started GET "/posts/new" for ::1 at 2016-03-24 01:34:18 +0800
+Processing by PostsController#new as HTML
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "posts" WHERE "posts"."user_id" = $1 AND (created_at > '2016-03-22 17:34:18.550466')[0m  [["user_id", 6]]
+  [1m[35mChallenge Load (0.2ms)[0m  SELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1  [["id", 4]]
+  Rendered posts/_form.html.erb (19.9ms)
+  Rendered posts/new.html.erb within layouts/application (55.6ms)
+Completed 200 OK in 228ms (Views: 149.6ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/" for ::1 at 2016-03-24 01:34:23 +0800
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mChallenge Load (0.2ms)[0m  [1mSELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1[0m  [["id", 24]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 10], ["votable_type", "Post"], ["vote_flag", "t"]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL  [["votable_id", 10], ["votable_type", "Post"], ["vote_flag", "f"]]
+  [1m[36mChallenge Load (0.2ms)[0m  [1mSELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1[0m  [["id", 22]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 6], ["votable_type", "Post"], ["vote_flag", "t"]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL  [["votable_id", 6], ["votable_type", "Post"], ["vote_flag", "f"]]
+  [1m[36mChallenge Load (0.2ms)[0m  [1mSELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1[0m  [["id", 23]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 5], ["votable_type", "Post"], ["vote_flag", "t"]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL  [["votable_id", 5], ["votable_type", "Post"], ["vote_flag", "f"]]
+  [1m[36mChallenge Load (0.2ms)[0m  [1mSELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1[0m  [["id", 13]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 14], ["votable_type", "Post"], ["vote_flag", "t"]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL  [["votable_id", 14], ["votable_type", "Post"], ["vote_flag", "f"]]
+  [1m[36mChallenge Load (0.2ms)[0m  [1mSELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 8], ["votable_type", "Post"], ["vote_flag", "t"]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL  [["votable_id", 8], ["votable_type", "Post"], ["vote_flag", "f"]]
+  [1m[36mChallenge Load (0.1ms)[0m  [1mSELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1[0m  [["id", 12]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 7], ["votable_type", "Post"], ["vote_flag", "t"]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL  [["votable_id", 7], ["votable_type", "Post"], ["vote_flag", "f"]]
+  Rendered posts/index.html.erb within layouts/application (46.6ms)
+Completed 200 OK in 70ms (Views: 62.5ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/" for ::1 at 2016-03-24 01:40:24 +0800
+Processing by PostsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mChallenge Load (0.2ms)[0m  SELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL  [["votable_id", 14], ["votable_type", "Post"], ["vote_flag", "t"]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 14], ["votable_type", "Post"], ["vote_flag", "f"]]
+  [1m[35mChallenge Load (0.1ms)[0m  SELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1  [["id", 22]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL  [["votable_id", 6], ["votable_type", "Post"], ["vote_flag", "t"]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 6], ["votable_type", "Post"], ["vote_flag", "f"]]
+  [1m[35mChallenge Load (0.1ms)[0m  SELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1  [["id", 23]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL  [["votable_id", 5], ["votable_type", "Post"], ["vote_flag", "t"]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 5], ["votable_type", "Post"], ["vote_flag", "f"]]
+  [1m[35mChallenge Load (0.1ms)[0m  SELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL  [["votable_id", 10], ["votable_type", "Post"], ["vote_flag", "t"]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 10], ["votable_type", "Post"], ["vote_flag", "f"]]
+  [1m[35mChallenge Load (0.3ms)[0m  SELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1  [["id", 18]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL  [["votable_id", 8], ["votable_type", "Post"], ["vote_flag", "t"]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 8], ["votable_type", "Post"], ["vote_flag", "f"]]
+  [1m[35mChallenge Load (0.1ms)[0m  SELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1  [["id", 16]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL  [["votable_id", 7], ["votable_type", "Post"], ["vote_flag", "t"]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 7], ["votable_type", "Post"], ["vote_flag", "f"]]
+  Rendered posts/index.html.erb within layouts/application (36.7ms)
+Completed 200 OK in 70ms (Views: 63.2ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/assets/challenges.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-24 01:40:24 +0800
+
+
+Started GET "/assets/application.self-2d681917362e8e4c12a1cc4b3584b445c1689a5b0eccdc2a5c548fe7d2fcc203.css?body=1" for ::1 at 2016-03-24 01:40:24 +0800
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-24 01:40:24 +0800
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-03-24 01:40:24 +0800
+
+
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-24 01:40:24 +0800
+Started GET "/assets/scaffolds.self-526dedf382fc94f390adf74d295b2b1be2754e02981b10124f4606e4b666c86b.css?body=1" for ::1 at 2016-03-24 01:40:24 +0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-24 01:40:24 +0800
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-24 01:40:24 +0800
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-03-24 01:40:24 +0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-24 01:40:24 +0800
+
+
+Started GET "/assets/challenges.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-24 01:40:24 +0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-24 01:40:24 +0800
+
+
+Started GET "/" for ::1 at 2016-03-24 01:41:41 +0800
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mChallenge Load (0.2ms)[0m  [1mSELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 14], ["votable_type", "Post"], ["vote_flag", "t"]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL  [["votable_id", 14], ["votable_type", "Post"], ["vote_flag", "f"]]
+  [1m[36mChallenge Load (0.1ms)[0m  [1mSELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 10], ["votable_type", "Post"], ["vote_flag", "t"]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL  [["votable_id", 10], ["votable_type", "Post"], ["vote_flag", "f"]]
+  [1m[36mChallenge Load (0.1ms)[0m  [1mSELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1[0m  [["id", 22]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 6], ["votable_type", "Post"], ["vote_flag", "t"]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL  [["votable_id", 6], ["votable_type", "Post"], ["vote_flag", "f"]]
+  [1m[36mChallenge Load (0.1ms)[0m  [1mSELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1[0m  [["id", 23]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 5], ["votable_type", "Post"], ["vote_flag", "t"]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL  [["votable_id", 5], ["votable_type", "Post"], ["vote_flag", "f"]]
+  [1m[36mChallenge Load (0.1ms)[0m  [1mSELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1[0m  [["id", 19]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 8], ["votable_type", "Post"], ["vote_flag", "t"]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL  [["votable_id", 8], ["votable_type", "Post"], ["vote_flag", "f"]]
+  [1m[36mChallenge Load (0.1ms)[0m  [1mSELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1[0m  [["id", 16]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 7], ["votable_type", "Post"], ["vote_flag", "t"]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL  [["votable_id", 7], ["votable_type", "Post"], ["vote_flag", "f"]]
+  Rendered posts/index.html.erb within layouts/application (40.5ms)
+Completed 200 OK in 75ms (Views: 65.8ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/assets/challenges.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-24 01:41:41 +0800
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-03-24 01:41:41 +0800
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-24 01:41:41 +0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-24 01:41:41 +0800
+
+
+Started GET "/assets/scaffolds.self-526dedf382fc94f390adf74d295b2b1be2754e02981b10124f4606e4b666c86b.css?body=1" for ::1 at 2016-03-24 01:41:41 +0800
+
+
+Started GET "/assets/application.self-2d681917362e8e4c12a1cc4b3584b445c1689a5b0eccdc2a5c548fe7d2fcc203.css?body=1" for ::1 at 2016-03-24 01:41:41 +0800
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-03-24 01:41:41 +0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-24 01:41:41 +0800
+
+
+Started GET "/assets/challenges.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-24 01:41:41 +0800
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-24 01:41:41 +0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-24 01:41:41 +0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-24 01:41:41 +0800
+
+
+Started DELETE "/users/sign_out" for ::1 at 2016-03-24 13:30:33 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"XqbcO6ZIYGKSojpZo7eKwmtnwADvsC0hoMn+b4FFSgNGyWveAw/D39FNj5QTy//VFL9os8qDVfcIverVqhT68Q=="}
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.6ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 228ms (ActiveRecord: 7.4ms)
+
+
+Started GET "/" for ::1 at 2016-03-24 13:30:34 +0800
+Processing by PostsController#index as HTML
+Completed 401 Unauthorized in 5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-03-24 13:30:34 +0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (71.9ms)
+Completed 200 OK in 500ms (Views: 494.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-03-24 14:23:59 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (53.3ms)
+Completed 200 OK in 336ms (Views: 301.6ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2016-03-24 14:24:02 +0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 49ms (Views: 48.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2016-03-24 14:24:29 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"76zx2oexGlKjfuWteD2Znh6moUuWr3GYN/adI3yXoOu5i8fr79OU5DpqSz1VxE9T5HEcMMb5Su2SVZMgwtyYwQ==", "user"=>{"username"=>"blue", "email"=>"blue@red.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.7ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'blue@red.com' LIMIT 1[0m
+  [1m[35mSQL (1.5ms)[0m  INSERT INTO "users" ("username", "email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["username", "blue"], ["email", "blue@red.com"], ["encrypted_password", "$2a$10$ckQ2G9TGQpwTA.wo2U5pH.0ZQuEfFZt0OVF69Ebaw8pN4BzvuA8VO"], ["created_at", "2016-03-24 06:24:29.764319"], ["updated_at", "2016-03-24 06:24:29.764319"]]
+  [1m[36m (62.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = $1, "current_sign_in_at" = $2, "last_sign_in_ip" = $3, "current_sign_in_ip" = $4, "sign_in_count" = $5, "updated_at" = $6 WHERE "users"."id" = $7[0m  [["last_sign_in_at", "2016-03-24 06:24:29.870776"], ["current_sign_in_at", "2016-03-24 06:24:29.870776"], ["last_sign_in_ip", "::1/128"], ["current_sign_in_ip", "::1/128"], ["sign_in_count", 1], ["updated_at", "2016-03-24 06:24:29.872233"], ["id", 7]]
+  [1m[35m (0.3ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 258ms (ActiveRecord: 67.7ms)
+
+
+Started GET "/" for ::1 at 2016-03-24 14:24:29 +0800
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 7]]
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mChallenge Load (0.2ms)[0m  [1mSELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36m (0.8ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 14], ["votable_type", "Post"], ["vote_flag", "t"]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL  [["votable_id", 14], ["votable_type", "Post"], ["vote_flag", "f"]]
+  [1m[36mChallenge Load (0.2ms)[0m  [1mSELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 10], ["votable_type", "Post"], ["vote_flag", "t"]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL  [["votable_id", 10], ["votable_type", "Post"], ["vote_flag", "f"]]
+  [1m[36mChallenge Load (0.2ms)[0m  [1mSELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1[0m  [["id", 22]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 6], ["votable_type", "Post"], ["vote_flag", "t"]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL  [["votable_id", 6], ["votable_type", "Post"], ["vote_flag", "f"]]
+  [1m[36mChallenge Load (0.2ms)[0m  [1mSELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1[0m  [["id", 23]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 5], ["votable_type", "Post"], ["vote_flag", "t"]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL  [["votable_id", 5], ["votable_type", "Post"], ["vote_flag", "f"]]
+  [1m[36mChallenge Load (0.2ms)[0m  [1mSELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1[0m  [["id", 19]]
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 8], ["votable_type", "Post"], ["vote_flag", "t"]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL  [["votable_id", 8], ["votable_type", "Post"], ["vote_flag", "f"]]
+  [1m[36mChallenge Load (0.2ms)[0m  [1mSELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1[0m  [["id", 16]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 7], ["votable_type", "Post"], ["vote_flag", "t"]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL  [["votable_id", 7], ["votable_type", "Post"], ["vote_flag", "f"]]
+  Rendered posts/index.html.erb within layouts/application (67.4ms)
+Completed 200 OK in 325ms (Views: 300.4ms | ActiveRecord: 8.5ms)
+
+
+Started GET "/posts/new" for ::1 at 2016-03-24 14:24:34 +0800
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 7]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "posts" WHERE "posts"."user_id" = $1 AND (created_at > '2016-03-23 06:24:34.736510')  [["user_id", 7]]
+  [1m[36mChallenge Load (0.1ms)[0m  [1mSELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1[0m  [["id", 19]]
+  Rendered posts/_form.html.erb (23.0ms)
+  Rendered posts/new.html.erb within layouts/application (31.3ms)
+Completed 200 OK in 71ms (Views: 62.2ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/posts" for ::1 at 2016-03-24 14:24:46 +0800
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"grUzzUciFB+QlumOefxB0ibEy0jDq5nwq4WW9a2yBa/UkgX8L0CaqQmCRx5UBZcf3BN2M5P9ooUOJpj2E/k9hQ==", "post"=>{"challenge_id"=>"19", "user_id"=>"", "whatIdid"=>"clue", "whatIlearnt"=>"snow"}, "commit"=>"Create Post"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 7]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("challenge_id", "whatIdid", "whatIlearnt", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["challenge_id", 19], ["whatIdid", "clue"], ["whatIlearnt", "snow"], ["user_id", 7], ["created_at", "2016-03-24 06:24:46.350325"], ["updated_at", "2016-03-24 06:24:46.350325"]]
+  [1m[36m (1.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/posts/15
+Completed 302 Found in 10ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/posts/15" for ::1 at 2016-03-24 14:24:46 +0800
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 7]]
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 15]]
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mChallenge Load (0.2ms)[0m  [1mSELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mChallenge Load (0.2ms)[0m  SELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mChallenge Load (0.2ms)[0m  [1mSELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1[0m  [["id", 22]]
+  [1m[35mChallenge Load (0.2ms)[0m  SELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1  [["id", 23]]
+  [1m[36mChallenge Load (0.2ms)[0m  [1mSELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1[0m  [["id", 19]]
+  [1m[35mChallenge Load (0.2ms)[0m  SELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1  [["id", 16]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1[0m  [["id", 19]]
+  Rendered posts/show.html.erb within layouts/application (18.3ms)
+Completed 200 OK in 55ms (Views: 49.6ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/posts/15" for ::1 at 2016-03-24 14:25:07 +0800
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 7]]
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 15]]
+Completed 404 Not Found in 34ms (ActiveRecord: 2.1ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'=15):
+  app/controllers/posts_controller.rb:93:in `set_post'
+
+
+  Rendered /Users/stefanieseah/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.6ms)
+  Rendered /Users/stefanieseah/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/stefanieseah/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/stefanieseah/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (46.0ms)
+  Rendered /Users/stefanieseah/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/stefanieseah/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/stefanieseah/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/stefanieseah/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/stefanieseah/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (38.6ms)
+  Rendered /Users/stefanieseah/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/stefanieseah/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/stefanieseah/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (88.5ms)
+
+
+Started GET "/posts/new" for ::1 at 2016-03-24 14:25:14 +0800
+Processing by PostsController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 7]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts" WHERE "posts"."user_id" = $1 AND (created_at > '2016-03-23 06:25:14.289918')[0m  [["user_id", 7]]
+  [1m[35mChallenge Load (0.2ms)[0m  SELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1  [["id", 20]]
+  Rendered posts/_form.html.erb (6.3ms)
+  Rendered posts/new.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 65ms (Views: 38.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for ::1 at 2016-03-24 14:25:15 +0800
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 7]]
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mChallenge Load (0.2ms)[0m  [1mSELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 14], ["votable_type", "Post"], ["vote_flag", "t"]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL  [["votable_id", 14], ["votable_type", "Post"], ["vote_flag", "f"]]
+  [1m[36mChallenge Load (0.2ms)[0m  [1mSELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 10], ["votable_type", "Post"], ["vote_flag", "t"]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL  [["votable_id", 10], ["votable_type", "Post"], ["vote_flag", "f"]]
+  [1m[36mChallenge Load (0.2ms)[0m  [1mSELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1[0m  [["id", 22]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 6], ["votable_type", "Post"], ["vote_flag", "t"]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL  [["votable_id", 6], ["votable_type", "Post"], ["vote_flag", "f"]]
+  [1m[36mChallenge Load (0.2ms)[0m  [1mSELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1[0m  [["id", 23]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 5], ["votable_type", "Post"], ["vote_flag", "t"]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL  [["votable_id", 5], ["votable_type", "Post"], ["vote_flag", "f"]]
+  [1m[36mChallenge Load (0.2ms)[0m  [1mSELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1[0m  [["id", 19]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 8], ["votable_type", "Post"], ["vote_flag", "t"]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL  [["votable_id", 8], ["votable_type", "Post"], ["vote_flag", "f"]]
+  [1m[36mChallenge Load (0.1ms)[0m  [1mSELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1[0m  [["id", 16]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 7], ["votable_type", "Post"], ["vote_flag", "t"]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL  [["votable_id", 7], ["votable_type", "Post"], ["vote_flag", "f"]]
+  Rendered posts/index.html.erb within layouts/application (44.4ms)
+Completed 200 OK in 67ms (Views: 59.4ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/" for ::1 at 2016-03-24 14:25:21 +0800
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 7]]
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mChallenge Load (0.1ms)[0m  [1mSELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 14], ["votable_type", "Post"], ["vote_flag", "t"]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL  [["votable_id", 14], ["votable_type", "Post"], ["vote_flag", "f"]]
+  [1m[36mChallenge Load (0.1ms)[0m  [1mSELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 10], ["votable_type", "Post"], ["vote_flag", "t"]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL  [["votable_id", 10], ["votable_type", "Post"], ["vote_flag", "f"]]
+  [1m[36mChallenge Load (0.1ms)[0m  [1mSELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1[0m  [["id", 22]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 6], ["votable_type", "Post"], ["vote_flag", "t"]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL  [["votable_id", 6], ["votable_type", "Post"], ["vote_flag", "f"]]
+  [1m[36mChallenge Load (0.2ms)[0m  [1mSELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1[0m  [["id", 23]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 5], ["votable_type", "Post"], ["vote_flag", "t"]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL  [["votable_id", 5], ["votable_type", "Post"], ["vote_flag", "f"]]
+  [1m[36mChallenge Load (0.1ms)[0m  [1mSELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1[0m  [["id", 19]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 8], ["votable_type", "Post"], ["vote_flag", "t"]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL  [["votable_id", 8], ["votable_type", "Post"], ["vote_flag", "f"]]
+  [1m[36mChallenge Load (0.1ms)[0m  [1mSELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1[0m  [["id", 16]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 7], ["votable_type", "Post"], ["vote_flag", "t"]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL  [["votable_id", 7], ["votable_type", "Post"], ["vote_flag", "f"]]
+  Rendered posts/index.html.erb within layouts/application (35.6ms)
+Completed 200 OK in 59ms (Views: 53.2ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/assets/scaffolds.self-526dedf382fc94f390adf74d295b2b1be2754e02981b10124f4606e4b666c86b.css?body=1" for ::1 at 2016-03-24 14:25:21 +0800
+
+
+Started GET "/assets/challenges.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-24 14:25:21 +0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-24 14:25:21 +0800
+
+
+Started GET "/assets/application.self-2d681917362e8e4c12a1cc4b3584b445c1689a5b0eccdc2a5c548fe7d2fcc203.css?body=1" for ::1 at 2016-03-24 14:25:21 +0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-24 14:25:21 +0800
+
+
+Started GET "/assets/challenges.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-24 14:25:21 +0800
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-24 14:25:21 +0800
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-24 14:25:21 +0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-24 14:25:21 +0800
+
+
+Started DELETE "/users/sign_out" for ::1 at 2016-03-24 14:25:23 +0800
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"wzcofjY8/tNmbLdq3ANJsq9XNRk2qq7sDtYH2H1nxCqVEB5PXl5wZf94Gfrx+p9/VYCIYmb8lZmrdQnbwyz8AA=="}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 7]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 9ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2016-03-24 14:25:23 +0800
+Processing by PostsController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-03-24 14:25:23 +0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 45ms (Views: 42.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2016-03-24 14:53:14 +0800
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BBPgIzWl1eedfQKldqcy9hLoi/zgd7XkWpkh6/RUypkL4EQGqUY6hLpEcfGeZzo19TElYfrbxv2XQBkbustK6Q==", "user"=>{"email"=>"tumi@snow.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (4.8ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "tumi@snow.com"]]
+  [1m[35m (0.6ms)[0m  BEGIN
+  [1m[36mSQL (2.1ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = $1, "current_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["last_sign_in_at", "2016-03-23 07:28:58.620419"], ["current_sign_in_at", "2016-03-24 06:53:14.557447"], ["sign_in_count", 8], ["updated_at", "2016-03-24 06:53:14.566070"], ["id", 2]]
+  [1m[35m (1.3ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 164ms (ActiveRecord: 8.8ms)
+
+
+Started GET "/" for ::1 at 2016-03-24 14:53:14 +0800
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mChallenge Load (0.5ms)[0m  [1mSELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36m (0.7ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 14], ["votable_type", "Post"], ["vote_flag", "t"]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL  [["votable_id", 14], ["votable_type", "Post"], ["vote_flag", "f"]]
+  [1m[36mChallenge Load (0.2ms)[0m  [1mSELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 10], ["votable_type", "Post"], ["vote_flag", "t"]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL  [["votable_id", 10], ["votable_type", "Post"], ["vote_flag", "f"]]
+  [1m[36mChallenge Load (0.2ms)[0m  [1mSELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1[0m  [["id", 22]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 6], ["votable_type", "Post"], ["vote_flag", "t"]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL  [["votable_id", 6], ["votable_type", "Post"], ["vote_flag", "f"]]
+  [1m[36mChallenge Load (0.2ms)[0m  [1mSELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1[0m  [["id", 23]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 5], ["votable_type", "Post"], ["vote_flag", "t"]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL  [["votable_id", 5], ["votable_type", "Post"], ["vote_flag", "f"]]
+  [1m[36mChallenge Load (0.2ms)[0m  [1mSELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1[0m  [["id", 19]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 8], ["votable_type", "Post"], ["vote_flag", "t"]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL  [["votable_id", 8], ["votable_type", "Post"], ["vote_flag", "f"]]
+  [1m[36mChallenge Load (0.2ms)[0m  [1mSELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1[0m  [["id", 16]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 7], ["votable_type", "Post"], ["vote_flag", "t"]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL  [["votable_id", 7], ["votable_type", "Post"], ["vote_flag", "f"]]
+  Rendered posts/index.html.erb within layouts/application (62.7ms)
+Completed 200 OK in 110ms (Views: 99.4ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/users/2" for ::1 at 2016-03-24 14:55:10 +0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."user_id" = $1  [["user_id", 2]]
+  [1m[36mChallenge Load (0.1ms)[0m  [1mSELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mChallenge Load (0.2ms)[0m  SELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mChallenge Load (0.2ms)[0m  [1mSELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1[0m  [["id", 23]]
+  Rendered users/show.html within layouts/application (9.4ms)
+Completed 200 OK in 51ms (Views: 46.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/posts/14/edit" for ::1 at 2016-03-24 14:55:16 +0800
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"14"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 14]]
+  Rendered posts/_form.html.erb (5.2ms)
+  Rendered posts/edit.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 37ms (Views: 33.6ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/posts/14" for ::1 at 2016-03-24 14:55:30 +0800
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"14qCBVt0Lgf3clTnxNK4CQDtmWQmGMJ9VlnyDd4yE4Wn4quGWrEAPnH9i8+gLsnF/w4GuIXB7RHOicKSO1lfqQ==", "post"=>{"challenge_id"=>"3", "user_id"=>"2", "whatIdid"=>"Swag celiac plaid, chicharrones lumbersexual williamsburg organic. Mixtape franzen chillwave leggings hella. Yr migas deep v sustainable tumblr. Master cleanse craft beer leggings cardigan, banjo franzen vinyl synth. Shoreditch cronut williamsburg iPhone. Fingerstache seitan DIY, farm-to-table actually tote bag umami fashion axe. Four dollar toast celiac jean shorts keytar, hella tumblr etsy.", "whatIlearnt"=>"Taxidermy normcore kinfolk, banh mi slow-carb intelligentsia wolf salvia godard tilde +1 trust fund street art church-key. Microdosing marfa hashtag fap, chicharrones tumblr pour-over. Hella tilde microdosing keffiyeh. Shabby chic paleo selfies hoodie meggings. Marfa flexitarian PBR&B YOLO."}, "commit"=>"Update Post", "id"=>"14"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 14]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/posts/14
+Completed 302 Found in 10ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/posts/14" for ::1 at 2016-03-24 14:55:31 +0800
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 14]]
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mChallenge Load (0.2ms)[0m  [1mSELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mChallenge Load (0.2ms)[0m  SELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mChallenge Load (0.2ms)[0m  [1mSELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1[0m  [["id", 22]]
+  [1m[35mChallenge Load (0.2ms)[0m  SELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1  [["id", 23]]
+  [1m[36mChallenge Load (0.2ms)[0m  [1mSELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1[0m  [["id", 19]]
+  [1m[35mChallenge Load (0.2ms)[0m  SELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1  [["id", 16]]
+  Rendered posts/show.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 41ms (Views: 37.1ms | ActiveRecord: 1.7ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2016-03-24 14:55:37 +0800
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"z2tcPVzokS/5l/hjgWDfpLA1V5qRmPYST/AKrtPHuVC/A3W+XS2/Fn8YJ0vlnK5oT9bIRjJB2X7XIDoxNqz1fA=="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 9ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2016-03-24 14:55:37 +0800
+Processing by PostsController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-03-24 14:55:37 +0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 28ms (Views: 26.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-03-24 14:55:40 +0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 39ms (Views: 38.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2016-03-24 14:55:41 +0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 28ms (Views: 27.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2016-03-24 14:56:18 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KnHjAolmtYRA5jurQfqteVs7Kcm3oIMjCwFk4dpf0xE3a/dtuqaow1P3xaQGz7UnvMqArQfhIQigDIhHWVKokw==", "user"=>{"username"=>"Yi Shu", "email"=>"aaa@gf.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.7ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'aaa@gf.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("username", "email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["username", "Yi Shu"], ["email", "aaa@gf.com"], ["encrypted_password", "$2a$10$KbSFZa7NKWgZlnQ/le7jses8sjZzwn9pmkctwCVthYzMAq5NXSQnC"], ["created_at", "2016-03-24 06:56:19.136428"], ["updated_at", "2016-03-24 06:56:19.136428"]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = $1, "current_sign_in_at" = $2, "last_sign_in_ip" = $3, "current_sign_in_ip" = $4, "sign_in_count" = $5, "updated_at" = $6 WHERE "users"."id" = $7[0m  [["last_sign_in_at", "2016-03-24 06:56:19.169506"], ["current_sign_in_at", "2016-03-24 06:56:19.169506"], ["last_sign_in_ip", "::1/128"], ["current_sign_in_ip", "::1/128"], ["sign_in_count", 1], ["updated_at", "2016-03-24 06:56:19.170728"], ["id", 8]]
+  [1m[35m (0.3ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 213ms (ActiveRecord: 6.9ms)
+
+
+Started GET "/" for ::1 at 2016-03-24 14:56:19 +0800
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 8]]
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mChallenge Load (0.2ms)[0m  [1mSELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 14], ["votable_type", "Post"], ["vote_flag", "t"]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL  [["votable_id", 14], ["votable_type", "Post"], ["vote_flag", "f"]]
+  [1m[36mChallenge Load (0.2ms)[0m  [1mSELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 10], ["votable_type", "Post"], ["vote_flag", "t"]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL  [["votable_id", 10], ["votable_type", "Post"], ["vote_flag", "f"]]
+  [1m[36mChallenge Load (0.2ms)[0m  [1mSELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1[0m  [["id", 22]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 6], ["votable_type", "Post"], ["vote_flag", "t"]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL  [["votable_id", 6], ["votable_type", "Post"], ["vote_flag", "f"]]
+  [1m[36mChallenge Load (0.2ms)[0m  [1mSELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1[0m  [["id", 23]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 5], ["votable_type", "Post"], ["vote_flag", "t"]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL  [["votable_id", 5], ["votable_type", "Post"], ["vote_flag", "f"]]
+  [1m[36mChallenge Load (0.2ms)[0m  [1mSELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1[0m  [["id", 19]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 8], ["votable_type", "Post"], ["vote_flag", "t"]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL  [["votable_id", 8], ["votable_type", "Post"], ["vote_flag", "f"]]
+  [1m[36mChallenge Load (0.3ms)[0m  [1mSELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1[0m  [["id", 16]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 7], ["votable_type", "Post"], ["vote_flag", "t"]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL  [["votable_id", 7], ["votable_type", "Post"], ["vote_flag", "f"]]
+  Rendered posts/index.html.erb within layouts/application (72.8ms)
+Completed 200 OK in 381ms (Views: 356.2ms | ActiveRecord: 8.7ms)
+
+
+Started GET "/posts/new" for ::1 at 2016-03-24 14:56:38 +0800
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 8]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "posts" WHERE "posts"."user_id" = $1 AND (created_at > '2016-03-23 06:56:38.923550')  [["user_id", 8]]
+  [1m[36mChallenge Load (0.2ms)[0m  [1mSELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1[0m  [["id", 15]]
+  Rendered posts/_form.html.erb (21.2ms)
+  Rendered posts/new.html.erb within layouts/application (30.6ms)
+Completed 200 OK in 74ms (Views: 66.1ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/posts" for ::1 at 2016-03-24 14:58:10 +0800
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"h8V3/S26XpsDNl1BK5cD2mMXwrzXZ5Wkvs3507xCnLma32OSHnpD3BAno05sohuEhOZr2GcmN48VwBV1P0/nOw==", "post"=>{"challenge_id"=>"15", "user_id"=>"", "whatIdid"=>"Went to Macs and tried to buy pork burger", "whatIlearnt"=>"The staff ain't so bad. ", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fc5c12109b0 @tempfile=#<Tempfile:/var/folders/2j/8xjl1hz13mj_r5ldmfrkpjmw0000gn/T/RackMultipart20160324-3464-1zqja7.jpg>, @original_filename="instagram7.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"post[image]\"; filename=\"instagram7.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Post"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+Command :: file -b --mime '/var/folders/2j/8xjl1hz13mj_r5ldmfrkpjmw0000gn/T/fe3c52f0e2c8ee009796b10789d1f00920160324-3464-1nl8lba.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/2j/8xjl1hz13mj_r5ldmfrkpjmw0000gn/T/fe3c52f0e2c8ee009796b10789d1f00920160324-3464-1el8iwu.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/2j/8xjl1hz13mj_r5ldmfrkpjmw0000gn/T/fe3c52f0e2c8ee009796b10789d1f00920160324-3464-1el8iwu.jpg[0]'
+Command :: convert '/var/folders/2j/8xjl1hz13mj_r5ldmfrkpjmw0000gn/T/fe3c52f0e2c8ee009796b10789d1f00920160324-3464-1el8iwu.jpg[0]' -auto-orient -resize "300x300>" '/var/folders/2j/8xjl1hz13mj_r5ldmfrkpjmw0000gn/T/36772b46fd63969b6b2b770fc73801e920160324-3464-16ycbzp'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/2j/8xjl1hz13mj_r5ldmfrkpjmw0000gn/T/fe3c52f0e2c8ee009796b10789d1f00920160324-3464-1el8iwu.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/2j/8xjl1hz13mj_r5ldmfrkpjmw0000gn/T/fe3c52f0e2c8ee009796b10789d1f00920160324-3464-1el8iwu.jpg[0]'
+Command :: convert '/var/folders/2j/8xjl1hz13mj_r5ldmfrkpjmw0000gn/T/fe3c52f0e2c8ee009796b10789d1f00920160324-3464-1el8iwu.jpg[0]' -auto-orient -resize "100x100" '/var/folders/2j/8xjl1hz13mj_r5ldmfrkpjmw0000gn/T/36772b46fd63969b6b2b770fc73801e920160324-3464-1i78k9y'
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Command :: file -b --mime '/var/folders/2j/8xjl1hz13mj_r5ldmfrkpjmw0000gn/T/fe3c52f0e2c8ee009796b10789d1f00920160324-3464-1fckr8g.jpg'
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "posts" ("challenge_id", "image_file_name", "image_content_type", "image_file_size", "image_updated_at", "whatIdid", "whatIlearnt", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"  [["challenge_id", 15], ["image_file_name", "instagram7.jpg"], ["image_content_type", "image/jpeg"], ["image_file_size", 78871], ["image_updated_at", "2016-03-24 06:58:10.804386"], ["whatIdid", "Went to Macs and tried to buy pork burger"], ["whatIlearnt", "The staff ain't so bad. "], ["user_id", 8], ["created_at", "2016-03-24 06:58:11.022304"], ["updated_at", "2016-03-24 06:58:11.022304"]]
+[paperclip] saving posts/images/000/000/016/original/instagram7.jpg
+[paperclip] saving posts/images/000/000/016/medium/instagram7.jpg
+[paperclip] saving posts/images/000/000/016/thumb/instagram7.jpg
+  [1m[36m (1.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/posts/16
+Completed 302 Found in 11828ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/posts/16" for ::1 at 2016-03-24 14:58:22 +0800
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 16]]
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mChallenge Load (0.1ms)[0m  [1mSELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mChallenge Load (0.2ms)[0m  SELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mChallenge Load (0.3ms)[0m  [1mSELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1[0m  [["id", 22]]
+  [1m[35mChallenge Load (0.2ms)[0m  SELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1  [["id", 23]]
+  [1m[36mChallenge Load (0.2ms)[0m  [1mSELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1[0m  [["id", 19]]
+  [1m[35mChallenge Load (0.2ms)[0m  SELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1  [["id", 16]]
+  [1m[36mChallenge Load (0.1ms)[0m  [1mSELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1[0m  [["id", 15]]
+  Rendered posts/show.html.erb within layouts/application (14.8ms)
+Completed 200 OK in 48ms (Views: 42.6ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for ::1 at 2016-03-24 14:59:41 +0800
+Processing by PostsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mChallenge Load (0.2ms)[0m  SELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL  [["votable_id", 14], ["votable_type", "Post"], ["vote_flag", "t"]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 14], ["votable_type", "Post"], ["vote_flag", "f"]]
+  [1m[35mChallenge Load (0.1ms)[0m  SELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL  [["votable_id", 10], ["votable_type", "Post"], ["vote_flag", "t"]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 10], ["votable_type", "Post"], ["vote_flag", "f"]]
+  [1m[35mChallenge Load (0.1ms)[0m  SELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1  [["id", 22]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL  [["votable_id", 6], ["votable_type", "Post"], ["vote_flag", "t"]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 6], ["votable_type", "Post"], ["vote_flag", "f"]]
+  [1m[35mChallenge Load (0.1ms)[0m  SELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1  [["id", 23]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL  [["votable_id", 5], ["votable_type", "Post"], ["vote_flag", "t"]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 5], ["votable_type", "Post"], ["vote_flag", "f"]]
+  [1m[35mChallenge Load (0.1ms)[0m  SELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1  [["id", 19]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL  [["votable_id", 8], ["votable_type", "Post"], ["vote_flag", "t"]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 8], ["votable_type", "Post"], ["vote_flag", "f"]]
+  [1m[35mChallenge Load (0.1ms)[0m  SELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1  [["id", 16]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL  [["votable_id", 7], ["votable_type", "Post"], ["vote_flag", "t"]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 7], ["votable_type", "Post"], ["vote_flag", "f"]]
+  [1m[35mChallenge Load (0.1ms)[0m  SELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1  [["id", 15]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 8]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL  [["votable_id", 16], ["votable_type", "Post"], ["vote_flag", "t"]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 16], ["votable_type", "Post"], ["vote_flag", "f"]]
+  Rendered posts/index.html.erb within layouts/application (39.9ms)
+Completed 200 OK in 70ms (Views: 63.0ms | ActiveRecord: 4.7ms)
+
+
+Started PUT "/posts/14/like" for ::1 at 2016-03-24 14:59:45 +0800
+Processing by PostsController#upvote as HTML
+  Parameters: {"authenticity_token"=>"y0G3nq0ifgM/V6nmNGim7lWhsbWnIGLqz+nGoRgwxtTWW6PxnuJjRCxGV+lzXb6wslAY0RdhwMFk5CoHmz29Vg==", "id"=>"14"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 14]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."voter_id" = $3 AND "votes"."voter_type" = $4 AND "votes"."vote_scope" IS NULL  [["votable_id", 14], ["votable_type", "Post"], ["voter_id", 8], ["voter_type", "User"]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "votes" ("votable_id", "votable_type", "voter_id", "voter_type", "vote_flag", "vote_weight", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["votable_id", 14], ["votable_type", "Post"], ["voter_id", 8], ["voter_type", "User"], ["vote_flag", "t"], ["vote_weight", 1], ["created_at", "2016-03-24 06:59:45.989804"], ["updated_at", "2016-03-24 06:59:45.989804"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 21ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/" for ::1 at 2016-03-24 14:59:45 +0800
+Processing by PostsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mChallenge Load (0.2ms)[0m  SELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL  [["votable_id", 14], ["votable_type", "Post"], ["vote_flag", "t"]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 14], ["votable_type", "Post"], ["vote_flag", "f"]]
+  [1m[35mChallenge Load (0.1ms)[0m  SELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL  [["votable_id", 10], ["votable_type", "Post"], ["vote_flag", "t"]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 10], ["votable_type", "Post"], ["vote_flag", "f"]]
+  [1m[35mChallenge Load (0.1ms)[0m  SELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1  [["id", 22]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL  [["votable_id", 6], ["votable_type", "Post"], ["vote_flag", "t"]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 6], ["votable_type", "Post"], ["vote_flag", "f"]]
+  [1m[35mChallenge Load (0.1ms)[0m  SELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1  [["id", 23]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL  [["votable_id", 5], ["votable_type", "Post"], ["vote_flag", "t"]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 5], ["votable_type", "Post"], ["vote_flag", "f"]]
+  [1m[35mChallenge Load (0.1ms)[0m  SELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1  [["id", 19]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL  [["votable_id", 8], ["votable_type", "Post"], ["vote_flag", "t"]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 8], ["votable_type", "Post"], ["vote_flag", "f"]]
+  [1m[35mChallenge Load (0.1ms)[0m  SELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1  [["id", 16]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL  [["votable_id", 7], ["votable_type", "Post"], ["vote_flag", "t"]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 7], ["votable_type", "Post"], ["vote_flag", "f"]]
+  [1m[35mChallenge Load (0.2ms)[0m  SELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1  [["id", 15]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 8]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL  [["votable_id", 16], ["votable_type", "Post"], ["vote_flag", "t"]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 16], ["votable_type", "Post"], ["vote_flag", "f"]]
+  Rendered posts/index.html.erb within layouts/application (38.9ms)
+Completed 200 OK in 61ms (Views: 54.6ms | ActiveRecord: 4.7ms)
+
+
+Started PUT "/posts/10/dislike" for ::1 at 2016-03-24 14:59:49 +0800
+Processing by PostsController#downvote as HTML
+  Parameters: {"authenticity_token"=>"bH53wR1SCJY6x6yEuqVSHLHDqc/CxC3CGGFX/OzNs19xZGOuLpIV0SnWUov9kEpCVjIAq3KFj+mzbLtab8DI3Q==", "id"=>"10"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 10]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."voter_id" = $3 AND "votes"."voter_type" = $4 AND "votes"."vote_scope" IS NULL  [["votable_id", 10], ["votable_type", "Post"], ["voter_id", 8], ["voter_type", "User"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "votes" ("votable_id", "votable_type", "voter_id", "voter_type", "vote_flag", "vote_weight", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["votable_id", 10], ["votable_type", "Post"], ["voter_id", 8], ["voter_type", "User"], ["vote_flag", "f"], ["vote_weight", 1], ["created_at", "2016-03-24 06:59:49.168211"], ["updated_at", "2016-03-24 06:59:49.168211"]]
+  [1m[36m (1.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 8ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/" for ::1 at 2016-03-24 14:59:49 +0800
+Processing by PostsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mChallenge Load (0.1ms)[0m  SELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL  [["votable_id", 14], ["votable_type", "Post"], ["vote_flag", "t"]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 14], ["votable_type", "Post"], ["vote_flag", "f"]]
+  [1m[35mChallenge Load (0.1ms)[0m  SELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL  [["votable_id", 10], ["votable_type", "Post"], ["vote_flag", "t"]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 10], ["votable_type", "Post"], ["vote_flag", "f"]]
+  [1m[35mChallenge Load (0.1ms)[0m  SELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1  [["id", 22]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL  [["votable_id", 6], ["votable_type", "Post"], ["vote_flag", "t"]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 6], ["votable_type", "Post"], ["vote_flag", "f"]]
+  [1m[35mChallenge Load (0.1ms)[0m  SELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1  [["id", 23]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL  [["votable_id", 5], ["votable_type", "Post"], ["vote_flag", "t"]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 5], ["votable_type", "Post"], ["vote_flag", "f"]]
+  [1m[35mChallenge Load (0.1ms)[0m  SELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1  [["id", 19]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL  [["votable_id", 8], ["votable_type", "Post"], ["vote_flag", "t"]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 8], ["votable_type", "Post"], ["vote_flag", "f"]]
+  [1m[35mChallenge Load (0.1ms)[0m  SELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1  [["id", 16]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL  [["votable_id", 7], ["votable_type", "Post"], ["vote_flag", "t"]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 7], ["votable_type", "Post"], ["vote_flag", "f"]]
+  [1m[35mChallenge Load (0.1ms)[0m  SELECT  "challenges".* FROM "challenges" WHERE "challenges"."id" = $1 LIMIT 1  [["id", 15]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 8]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL  [["votable_id", 16], ["votable_type", "Post"], ["vote_flag", "t"]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = $3 AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 16], ["votable_type", "Post"], ["vote_flag", "f"]]
+  Rendered posts/index.html.erb within layouts/application (39.1ms)
+Completed 200 OK in 62ms (Views: 56.5ms | ActiveRecord: 4.4ms)
